@@ -1,10 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Gemma Hall Company</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GZL Consulting - Professional Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            max-width: 700px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 60px 50px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #2d3748;
+            font-weight: 700;
+        }
+
+        .tagline {
+            font-size: 1.3em;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .location {
+            color: #666;
+            margin-bottom: 35px;
+            font-size: 1em;
+        }
+
+        .summary {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .clients {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 45px;
+            justify-content: center;
+        }
+
+        .client-tag {
+            background: white;
+            border: 2px solid #e2e8f0;
+            padding: 15px 25px;
+            border-radius: 12px;
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+            font-size: 0.95em;
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .client-tag:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-color: #667eea;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                padding: 40px 30px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .tagline {
+                font-size: 1.1em;
+            }
+
+            .summary {
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Welcome to Gemma Hall Company</h1>
-  <p>Professional services you can trust.</p>
+    <div class="card">
+        <h1>GZL Consulting</h1>
+        <p class="tagline">Product Management, Business and Technical Analysis, Service Design</p>
+        <p class="location">📍 Manchester, United Kingdom</p>
+
+        <div class="summary">
+            Providing consultancy services for 20+ years, including 10+ years as an associate consultant at Equal Experts.
+            <br><br>
+            Services include technical analysis, business analysis, service design, delivery leadership and product ownership.
+            <br><br>
+            Clients across government, retail, financial services, travel and technology sectors.
+        </div>
+
+        <h2>Clients include</h2>
+        <div class="clients">
+            <div class="client-tag">Equal Experts</div>
+            <div class="client-tag">DEFRA</div>
+            <div class="client-tag">Awaze</div>
+            <div class="client-tag">cinch</div>
+            <div class="client-tag">Pret A Manger</div>
+            <div class="client-tag">Thames Water</div>
+            <div class="client-tag">Co-op</div>
+            <div class="client-tag">Footasylum</div>
+            <div class="client-tag">NBC Universal</div>
+            <div class="client-tag">HMRC</div>
+            <div class="client-tag">Lloyds Banking Group</div>
+            <div class="client-tag">Boots</div>
+            <div class="client-tag">adidas</div>
+        </div>
+
+        <a href="https://www.linkedin.com/in/gemma-hall-0697b123/" class="cta-button" target="_blank">View LinkedIn Profile</a>
+        
+        <div style="margin-top: 40px; padding-top: 30px; border-top: 2px solid #e2e8f0;">
+            <p style="font-size: 1.1em; color: #2d3748; margin-bottom: 10px;"><strong>Gemma Hall</strong></p>
+            <p style="color: #666; margin-bottom: 5px;">
+                <a href="mailto:gemma@gzl-consulting.co.uk" style="color: #667eea; text-decoration: none;">gemma@gzl-consulting.co.uk</a>
+            </p>
+            <p style="color: #666;">
+                <a href="https://www.linkedin.com/in/gemma-hall-0697b123/" target="_blank" style="color: #667eea; text-decoration: none;">LinkedIn Profile</a>
+            </p>
+        </div>
+    </div>
 </body>
 </html>
